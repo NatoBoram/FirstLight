@@ -27,14 +27,3 @@ do
     java -Xmx3G -d64 -jar spigot.jar nogui
 done
 ```
-
-## Windows
-Requires Java 8.
-
-## Linux
-Requires Java 8.
-``` sh
-#!/bin/sh
-sudo apt update
-sudo apt install openjdk-8-jre
-```
