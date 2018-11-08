@@ -1,4 +1,4 @@
-# WesternTea
+# [WesternTea](https://www.spigotmc.org/resources/32061/)
 
 [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/NatoBoram/western-tea)
 
