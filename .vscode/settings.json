@@ -1,0 +1,10 @@
+{
+	"editor.codeActionsOnSave": {
+		"source.fixAll": true,
+		"source.organizeImports": true,
+	},
+	"editor.formatOnSave": true,
+	"editor.insertSpaces": false,
+	"explorer.compactFolders": true,
+	"java.configuration.updateBuildConfiguration": "automatic",
+}
