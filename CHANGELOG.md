@@ -9,12 +9,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ### Added
 
 - VSCode support
+- Maven support
 
 ### Changed
 
-- Spigot API 1.15.2
+- Renamed from _Western Tea_ to _First Light_
 
 ### Deprecated
+
+- Now targets Minecraft 1.15
+- Now targets Spigot API 1.15.2
+- Now targets OpenJDK 14
 
 ### Removed
 

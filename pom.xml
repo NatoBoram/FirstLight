@@ -10,6 +10,26 @@
 	<url>https://gitlab.com/NatoBoram/FirstLight</url>
 	<description>Stops the server when the last man standing quits.</description>
 
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<jdk.version>14</jdk.version>
+		<maven.compiler.source>14</maven.compiler.source>
+		<maven.compiler.target>14</maven.compiler.target>
+	</properties>
+
+	<build>
+		<sourceDirectory>${basedir}/src</sourceDirectory>
+
+		<resources>
+			<resource>
+				<directory></directory>
+				<includes>
+					<include>plugin.yml</include>
+				</includes>
+			</resource>
+		</resources>
+	</build>
+
 	<dependencies>
 
 		<!-- Spigot API -->
