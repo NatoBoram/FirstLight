@@ -1,3 +1,5 @@
-name: WesternTea
-main: com.natoboram.westerntea.WesternTea
-version: 1.0.2
+name: FirstLight
+main: com.natoboram.spigot.firstlight
+version: 1.1.0
+api: []
+api-version: "1.15.2"
