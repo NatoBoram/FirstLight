@@ -1,5 +1,6 @@
 # [First Light](https://www.spigotmc.org/resources/32061/)
 
+[![pipeline status](https://gitlab.com/NatoBoram/FirstLight/badges/master/pipeline.svg)](https://gitlab.com/NatoBoram/FirstLight/-/commits/master)
 [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/NatoBoram/first-light)
 
 If you run a server on your personal computer, you might notice sometimes that the server crashes and rolls back to a few hours before. The people on your server might be a little upset. In fact, if you let your server run for too long without shutting it down, it will crash, and that's sad for everyone.
