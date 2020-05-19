@@ -1,4 +1,4 @@
-# [FirstLight](https://www.spigotmc.org/resources/32061/)
+# [First Light](https://www.spigotmc.org/resources/32061/)
 
 [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/NatoBoram/first-light)
 
@@ -15,7 +15,7 @@ Before using this plugin, I recommend using a loop to start your server as it wi
 
 ### Windows
 
-```Windows
+```bat
 @echo off
 :x
 	cls
@@ -34,4 +34,32 @@ do
 	sleep 5
 	java -Xmx3G -d64 -jar spigot.jar nogui
 done
+```
+
+## Dependencies
+
+### Windows
+
+Use [scoop](https://scoop.sh/) to install dependencies.
+
+```batch
+scoop bucket add extras
+scoop bucket add java
+scoop install maven openjdk vscode
+```
+
+### Linux
+
+```bash
+sudo snap install vscode
+sudo apt install default-jdk maven
+```
+
+## Build
+
+Open in VSCode then run these commands.
+
+```shell
+mvn eclipse:eclipse
+mvn package
 ```
