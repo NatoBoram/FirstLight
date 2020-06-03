@@ -3,7 +3,7 @@
 
 	<groupId>com.natoboram.spigot</groupId>
 	<artifactId>firstlight</artifactId>
-	<version>1.1.0</version>
+	<version>1.1.1</version>
 	<packaging>jar</packaging>
 
 	<name>First Light</name>
@@ -22,13 +22,56 @@
 
 		<resources>
 			<resource>
-				<directory></directory>
+				<directory>.</directory>
 				<includes>
 					<include>plugin.yml</include>
 				</includes>
 			</resource>
 		</resources>
+
+		<plugins>
+
+			<!-- Shade -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-shade-plugin</artifactId>
+				<version>3.2.4</version>
+				<configuration>
+					<relocations>
+
+						<!-- bStats -->
+						<relocation>
+							<pattern>org.bstats</pattern>
+							<shadedPattern>com.natoboram.spigot.firstlight</shadedPattern>
+						</relocation>
+					</relocations>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>shade</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
 	</build>
+
+	<repositories>
+
+		<!-- Spigot Maven -->
+		<repository>
+			<id>spigot-repo</id>
+			<url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+		</repository>
+
+		<!-- bStats Maven -->
+		<repository>
+			<id>CodeMC</id>
+			<url>https://repo.codemc.org/repository/maven-public</url>
+		</repository>
+	</repositories>
 
 	<dependencies>
 
@@ -38,6 +81,14 @@
 			<artifactId>spigot-api</artifactId>
 			<version>1.15.2-R0.1-SNAPSHOT</version>
 			<scope>provided</scope>
+		</dependency>
+
+		<!-- bStats -->
+		<dependency>
+			<groupId>org.bstats</groupId>
+			<artifactId>bstats-bukkit</artifactId>
+			<version>1.7</version>
+			<scope>compile</scope>
 		</dependency>
 	</dependencies>
 </project>

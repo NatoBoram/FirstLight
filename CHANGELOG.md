@@ -18,6 +18,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ### Security
 
+## [1.1.1] - 2020-06-03
+
+### Added
+
+- [bStats](https://bstats.org/plugin/bukkit/_/7722)
+
+### Fixed
+
+- Reduced tested APIs to 1.12+.
+
 ## [1.1.0] - 2020-05-18
 
 ### Added
